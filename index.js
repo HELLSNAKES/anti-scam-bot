@@ -16,8 +16,8 @@ client.on('messageCreate', async message => {
             .setTitle("Scam detected")
             .setColor("#ff0000")
             .setDescription("Please don't send any scam messages. Thank you.")
-            .setFooter("Antiscam-Bot by @HELLSNAKE#6851")
-        message.channel.send({ embeds: [embed] })
+            .setFooter("Antiscam-Bot by @HELLSNAKE#6851|Automatically delete messages after 1 minute")
+        message.channel.send({ embeds: [embed] }).then(m => { setTimeout(() => { m.delete() }, 60000) })
     }
 })
 // anti crash 
