@@ -11,3 +11,5 @@ cd anti-scam-bot
 npm i
 ```
 Change the bot token in `config.json` and then `npm start`.
+
+> Bot needs permission to delete messages to work
