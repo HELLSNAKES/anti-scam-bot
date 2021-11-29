@@ -3,7 +3,7 @@ const client = new Client({
     intents: [Intents.FLAGS.GUILD_VOICE_STATES, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILDS],
     ws: { properties: { $browser: "Discord iOS" } }
 })
-const config = require("./config.json")
+require("dotenv").config()
 client.once('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
     client.user.setActivity(`Antiscam-Bot`, { type: 3, browser: "DISCORD IOS" })
@@ -27,4 +27,4 @@ process.on("unhandledRejection", (reason, p) => {
 process.on("uncaughtException", (err, origin) => {
     console.log(err, origin)
 })
-client.login(config.token)
+client.login(process.env.token)

@@ -1,0 +1,19 @@
+{
+    "name": "anti-scam-bot",
+    "description": "anti-scam-bot",
+    "repository": "https://github.com/HELLSNAKES/anti-scam-bot",
+    "logo": "https://i.imgur.com/xOXUzKx.png",
+    "keywords": "discord.js",
+    "image": "heroku/nodejs",
+    "buildpacks": [
+        {
+            "url": "heroku/nodejs"
+        }
+    ],
+    "env": {
+        "token": {
+            "description": "The Discord Bot Token (https://discord.com/developers/applications)",
+            "required": true
+        }
+    }
+}

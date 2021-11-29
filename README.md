@@ -5,11 +5,13 @@
 2. Git
 3. A Discord bot token
 ## Installing:
-```
-git clone https://github.com/HELLSNAKES/anti-scam-bot.git
-cd anti-scam-bot
-npm i
-```
-Change the bot token in `config.json` and then `npm start`.
+1. Run `git clone https://github.com/HELLSNAKES/anti-scam-bot.git`
+2. Run `cd anti-scam-bot`
+3. Run `npm i`
+4. Rename `.env_example` to `.env` 
+5. Run `npm start` to get the bot working
+## Heroku host
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HELLSNAKES/anti-scam-bot.git)
 
 > Bot needs permission to delete messages to work
