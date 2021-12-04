@@ -1,4 +1,5 @@
 # Anti-scam-bot
+Invite: https://discord.com/oauth2/authorize?client_id=905387687547113493&permissions=8&scope=bot
 
 ## Requirements:
 1. Nodejs>=16
